@@ -17,15 +17,41 @@
               tw:<span class="text-sky-900">mf</span>
             </div>
           </div>
-          <div class="relative flex-grow justify-end">
-            <div class="flex">
+          <div class="relative flex flex-grow justify-end">
+            <div class="flex justify-end w-full">
               <div class="menu-item">Home</div>
               <div class="menu-item">Lineup</div>
-              <div class="menu-item">Tickets</div>
+              <div class="menu-item group">
+                <span>Tickets</span>
+                <div class="absolute right-0 top-full hidden whitespace-nowrap rounded-b-lg bg-gradient-to-r from-rose-500 to-pink-500 text-right group-hover:block">
+                  <div class="cursor-pointer p-4 font-bold text-pink-200 hover:bg-white/10 hover:text-zinc-200">
+                    <span>Single day ticket</span>
+                  </div>
+                  <div class="cursor-pointer p-4 font-bold text-pink-200 hover:bg-white/10 hover:text-zinc-200">
+                    <span>7 day ticket</span>
+                  </div>
+                </div>
+              </div>
               <div class="menu-item">Support</div>
             </div>
           </div>
         </nav>
+        <div class="flex h-[calc(100vh-200px)] min-h-[400px] flex-col items-center justify-center bg-[url('../assets/images/hero.jpg')] bg-cover bg-center bg-fixed">
+          <div class="flex flex-col items-center text-center bg-white/40 p-6 rounded-xl">
+            <img src="../assets/images/logo.png" width="150px" class="mb-4" />
+            <div class="text-4xl font-bold text-white">tw:<span class="text-sky-900">mf</span></div>
+          </div>
+          <form class="mt-8 w-full max-w-md px-4">
+            <p class="mb-4 text-center text-xl font-bold text-white">Keep me updated with news and promotions</p>
+            <div class="flex gap-4">
+              <input type="email" placeholder="Enter your email" 
+                class="flex-1 rounded-lg bg-white/40 px-6 py-3 text-gray-900 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+              <button type="submit" class="rounded-lg bg-pink-500 px-8 py-3 font-bold text-white hover:bg-pink-400">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
       </header>
     </main>
   </body>
